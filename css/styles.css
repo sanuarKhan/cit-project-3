@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --btnwid: 8em;
+  --brand-color: #5956e8;
+}
+.brand-bg-color {
+  background: #5956e8;
+}
+.brand-color {
+  color: #5956e8;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/************************ common css end *****************/
+
+.btnwid {
+  width: var(--btnwid);
+}
+.nav-link:hover,
+.hover:hover {
+  color: var(--brand-color) !important;
+}
+
+.card-hover:hover {
+  box-shadow: 0 4px 4px rgba(187, 42, 42, 0.25);
+  background: #fff !important;
+  width: 120%;
+}
+.card-hover:hover .hover-icon {
+  background: var(--brand-color);
+  color: #fff !important;
+}
+.info {
+  opacity: 0;
+  transition: 1s ease;
+}
+.imgbox:hover .info {
+  opacity: 1;
+}
+
+.overlay {
+  background-image: linear-gradient(0deg, #0404e0e8, transparent);
+}
+
+@media (max-width: 575.98px) {
+  .Customer .row .card {
+    width: 80%;
+  }
+
+  .Team .row .col-12 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .News .row .card {
+    width: 80%;
+  }
+}
